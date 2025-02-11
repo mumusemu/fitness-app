@@ -1,0 +1,183 @@
+/* Step 2 */
+.step-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+}
+
+/* Rectangle 1 */
+.rectangle-1 {
+    position: absolute;
+    width: 469px;
+    height: 695px;
+    right: 486px;
+    bottom: 164px;
+    background: #E8E8FF;
+}
+
+/* Primary Button 1 */
+.primary-btn-1 {
+    position: absolute;
+    width: 170px;
+    height: 48px;
+    right: 533px;
+    bottom: 210px;
+    background: #4140E6;
+    border-radius: 4px;
+}
+
+.primary-btn-1-label {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    left: calc(50% - 37px / 2 - 0.5px);
+    top: calc(50% - 24px / 2);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-feature-settings: 'ss01' on;
+}
+
+/* Primary Button 2 */
+.primary-btn-2 {
+    position: absolute;
+    width: 170px;
+    height: 48px;
+    right: 738px;
+    bottom: 210px;
+    background: #5453E3;
+    border-radius: 4px;
+}
+
+.primary-btn-2-label {
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    left: calc(50% - 39px / 2 - 0.5px);
+    top: calc(50% - 24px / 2);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-feature-settings: 'ss01' on;
+}
+
+/* Pick your workout days */
+.workout-days-label {
+    position: absolute;
+    width: 375px;
+    height: 96px;
+    left: 531px;
+    top: 197px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #183137;
+}
+
+/* List Item */
+.list-item {
+    position: absolute;
+    width: 335px;
+    height: 40px;
+    left: 551px;
+}
+
+.list-item-label {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 0px;
+    top: calc(50% - 24px/2);
+    /* Body/Body 1/Regular */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    font-feature-settings: 'ss01' on;
+
+    /* UI/Fitness/Dark Blue/Darken-1 */
+    color: #183137;
+}
+
+.list-item-base {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* UI/Fitness/UI Colors/White */
+    background: #FFFFFF;
+
+}
+
+/* Dynamically Adjust List Item Position */
+.list-item-0 {
+    top: 341px;
+}
+
+.list-item-1 {
+    top: 390px;
+}
+
+.list-item-2 {
+    top: 439px;
+}
+
+.list-item-3 {
+    top: 488px;
+}
+
+.list-item-4 {
+    top: 537px;
+}
+
+.list-item-5 {
+    top: 586px;
+}
+
+.list-item-6 {
+    top: 635px;
+}
+
+/* Check Icon */
+.check-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: calc(50% - 8px);
+    /* Align to the center */
+    border: 2px solid #5453E3;
+    border-radius: 2px;
+    background: #FFFFFF;
+}
+
+/* When checked, fill with a check mark */
+.check-icon.checked {
+    background: #5453E3;
+    /* Color when checked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.check-icon.checked::after {
+    content: "✔";
+    /* Check mark */
+    font-size: 12px;
+}

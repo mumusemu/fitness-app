@@ -1,0 +1,125 @@
+/* Genel stil */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 20px;
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Flexbox ile responsive düzen */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1 1 200px; /* 200px genişlik minimum, kalan alana yayılır */
+  margin: 10px;
+  padding: 20px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Grid ile responsive düzen */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Otomatik kolon */
+  gap: 20px;
+}
+
+/* Responsive yazı boyutları */
+h1 {
+  font-size: clamp(20px, 5vw, 36px); /* Ekran boyutuna göre dinamik yazı boyutu */
+}
+
+h2 {
+  font-size: clamp(18px, 4vw, 30px);
+}
+
+p {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Yazı boyutunu küçült */
+    padding: 15px;  /* İç boşlukları küçült */
+  }
+
+  h1 {
+    font-size: 28px;  /* Daha küçük başlık boyutu */
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .flex-container {
+    flex-direction: column; /* Flex düzeni dikey hale getir */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Tek kolonlu düzen */
+  }
+
+  .item, .flex-item {
+    margin: 5px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Daha küçük ekranlarda yazıyı daha da küçült */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .item, .flex-item {
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Mobilde tek kolon */
+  }
+}

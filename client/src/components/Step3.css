@@ -1,0 +1,238 @@
+/* Step 3 */
+.step3-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+  }
+
+  /* Rectangle 3 */
+  .step3-rectangle {
+    position: absolute;
+    width: 469px;
+    height: 695px;
+    right: 486px;
+    bottom: 164px;
+    background: #E8E8FF;
+  }
+  /* Rectangle 1 */
+
+  
+  /* Rectangle 1 */
+  .rectangle-1 {
+    position: absolute;
+    width: 469px;
+    height: 695px;
+    right: 486px;
+    bottom: 164px;
+    background: #E8E8FF;
+  }
+  
+  /* Primary Button 1 */
+  .primary-btn-1 {
+    position: absolute;
+    width: 170px;
+    height: 48px;
+    right: 533px;
+    bottom: 210px;
+    background: #4140E6;
+    border-radius: 4px;
+  }
+  
+  .primary-btn-1-label {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    left: calc(50% - 37px / 2 - 0.5px);
+    top: calc(50% - 24px / 2);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-feature-settings: 'ss01' on;
+  }
+  
+  /* Primary Button 2 */
+  .primary-btn-2 {
+    position: absolute;
+    width: 170px;
+    height: 48px;
+    right: 738px;
+    bottom: 210px;
+    background: #5453E3;
+    border-radius: 4px;
+  }
+  
+  .primary-btn-2-label {
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    left: calc(50% - 39px / 2 - 0.5px);
+    top: calc(50% - 24px / 2);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-feature-settings: 'ss01' on;
+  }
+  /* What is your fitness goal? */
+  .fitness-goal-title {
+    position: absolute;
+    width: 375px;
+    height: 96px;
+    left: 531px;
+    top: 197px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #183137;
+  }
+  
+  /* Group 1, 2, 3 */
+  .group {
+    position: absolute;
+    width: 375px;
+    height: 90px;
+    background: #FFFFFF;
+  }
+  
+  .group .list-item {
+    position: absolute;
+    width: 335px;
+    height: 73.47px;
+    left: 551px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .group .list-item-base {
+   /* Base */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* UI/Fitness/UI Colors/White */
+    background: #FFFFFF;
+
+  }
+  
+  .group .list-item .icon {
+    /* Icon */
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: calc(50% - 20px/2 + 0.27px);
+  }
+  
+  .group .list-item .label {
+    /* Label */
+    position: absolute;
+    width: 92px;
+    height: 24px;
+    left: 32px;
+    top: calc(50% - 24px/2 + 0.27px);
+
+    /* Body/Body 1/Regular */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    font-feature-settings: 'ss01' on;
+
+    /* UI/Fitness/Dark Blue/Darken-1 */
+    color: #183137;
+  }
+  /* 
+  .group .list-item .radio-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: calc(50% - 20px/2 + 0.27px);
+  } */
+  
+  /* Group-specific styles (Lose Weight, Build Muscle, Healthy Living) */
+  .group-1 { top: 377px; }
+  .group-2 { top: 467px; }
+  .group-3 { top: 557px; }
+  
+  /* Additional styling for group elements */
+  .group .rectangle {
+    position: absolute;
+    width: 375px;
+    height: 90px;
+    left: 531px;
+    top: 0;
+    background: #FFFFFF;
+  }
+
+/* Aktif Radio Button */
+.radio-button.active {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: calc(50% - 20px / 2 + 0.27px);
+  }
+  
+  /* Oval - Aktif Seçim */
+  .radio-button.active .oval {
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 35%;
+    bottom: 35%;
+    background: #FFFFFF; /* UI/Fitness/UI Colors/White */
+  }
+  
+  /* Oval - Aktif Seçim İçin İç Renk */
+  .radio-button.active .inner-oval {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #5453E3; /* Brand / Deep Purple */
+  }
+  
+  /* Inaktif Radio Button */
+  .radio-button.inactive {
+    /* Radio Button */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: calc(50% - 20px/2 + 0.27px);
+    /* Radio Button/Inactive */
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* UI/Fitness/Dark Blue/Lighten-1 */
+    border: 1px solid #E3E8E9;
+  }
+  
+  /* Oval - Inaktif Seçim */
+  .radio-button.inactive .oval {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border: 1px solid #E3E8E9; /* UI/Fitness/Dark Blue/Lighten-1 */
+  }
+  

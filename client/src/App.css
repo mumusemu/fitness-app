@@ -1,0 +1,12 @@
+/* Sayfa yönü değiştikçe, öğelerin hizalanmasını güncelleyelim */
+html[dir="rtl"] {
+    text-align: right; /* Sağdan sola yazı hizalaması */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  /* Diğer stil ayarları burada olabilir */
+  
